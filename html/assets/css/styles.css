@@ -2260,6 +2260,7 @@ footer {
 
 footer img.logo {
   margin-bottom: 30px;
+  width: 100px;
 }
 
 footer .text {
