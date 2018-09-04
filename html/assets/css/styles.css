@@ -1094,7 +1094,8 @@ welcome
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
   max-width: 1920px;
-  margin: 0 0 60px 0;
+  margin: auto;
+  margin-bottom: 40px;
 }
 
 .welcome-area:after {
@@ -1136,6 +1137,22 @@ welcome
   top: 0px;
   min-height: 500px;
   z-index: 2;
+}
+
+.welcome-area .header {
+  position: absolute;
+  width: 100%;
+  top: 23%;
+  transform: perspective(1px) translateY(0%);
+  z-index: 4;
+}
+
+.header-t {
+  position: absolute;
+  width: 100%;
+  top: 23%;
+  transform: perspective(1px) translateY(0%);
+  z-index: 4;
 }
 
 .welcome-area .header-text {
@@ -1343,12 +1360,11 @@ features
 }
 
 #contractor-distributor {
-/*  position: absolute;
+  position: absolute;
   top: 63%;
   width: 100%;
   z-index: 4;
   transform: perspective(1px) translateY(0%);
-*/
   margin-top: -100px;
 }
 
@@ -1484,6 +1500,13 @@ features
   .features-home {
     padding-top: 100px;
     margin-top: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #firms-box {
+    flex: 0 0 35%;
+    max-width: 35%;
   }
 }
 
