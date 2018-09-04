@@ -1093,6 +1093,8 @@ welcome
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .welcome-area:after {
@@ -1113,6 +1115,10 @@ welcome
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
+}
+
+.welcome-area .right-bg img {
+  max-width: 79.5%;
 }
 
 .welcome-area .right-bg:before {
@@ -1334,6 +1340,10 @@ features
 .features-home {
   padding-top: 0px;
   margin-top: -100px;
+}
+
+#features-list {
+  justify-content: space-evenly;
 }
 
 .features-small-item {
@@ -1628,6 +1638,10 @@ parallax
 team
 --------------------------------------------- 
 */
+
+#team-page{
+  margin-top:160px;
+}
 #team-list {
   justify-content: space-evenly;
   margin-top: 80px;
@@ -1638,7 +1652,7 @@ team
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 0px 0px 40px 40px;
   position: relative;
   margin-bottom: 30px;
   margin-top: 45px;
