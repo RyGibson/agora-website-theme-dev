@@ -1630,7 +1630,7 @@ team
 */
 #team-list {
   justify-content: space-evenly;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .team-item {
@@ -1649,8 +1649,8 @@ team
 }
 
 .team-item .user-image {
-  width: 180px;
-  height: 180px;
+  width: 250px;
+  height: 300px;
   border: 6px solid #fff;
   overflow: hidden;
   -webkit-border-radius: 25px;
@@ -1672,31 +1672,45 @@ team
   display: inline;
   margin: 0 auto;
   width: 100%;
-  bottom: -25%;
+  bottom: -30px;
   position: absolute;
 }
 
 .team-item .team-content {
   text-align: center;
   overflow: hidden;
+  padding-top: 120px;
 }
 
 .team-item .team-content .team-info {
-  background-image: linear-gradient(135deg, #6A30D1 0%, #5C83E3 100%);
+  /*background-image: linear-gradient(135deg, #6A30D1 0%, #5C83E3 100%);*/
   margin-top: 70px;
   margin-bottom: 30px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 .team-item .team-content .team-info .user-name {
-  display: block;
-  font-weight: 400;
+  display: inline-block;
+  font-weight: 500;
   font-size: 18px;
-  color: #fff;
+  color: linear-gradient(135deg, #6A30D1 0%, #5C83E3 100%);
   letter-spacing: 0.69px;
   margin-bottom: 5px;
+  margin-right: 5px;
   margin-top: 5px;
+}
+
+.team-item .team-content .team-info a {
+    color: #fff;
+    /*margin-left: 5px;*/
+    display: inline-block;
+    /*padding: 10px;*/
+}
+.team-item .team-content .team-info a i {
+    background: #635CDB;
+    padding: 4px 5px 5px 6px;
+    border-radius: 5px;
 }
 
 .team-item .team-content .team-info span {
@@ -2269,7 +2283,7 @@ footer
 */
 footer {
   background: #F4F8FB;
-  padding-top: 70px;
+  /*padding-top: 70px;*/
 }
 
 footer img.logo {
@@ -2357,8 +2371,8 @@ footer .address .social li a {
 
 footer .copyright {
   text-align: center;
-  border-top: 1px solid #DAE6FD;
-  margin-top: 30px;
+  /*border-top: 1px solid #DAE6FD;*/
+  /*margin-top: 30px;*/
   padding-top: 30px;
   padding-bottom: 30px;
   font-weight: 400;
@@ -2538,7 +2552,7 @@ pages
 .page .page-bottom .about .about-text {
   position: absolute;
   z-index: 2;
-  width: 40%;
+  width: 43%;
   float: right;
   right: 0px;
   top: 50%;
@@ -2546,8 +2560,7 @@ pages
   background: #fff;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
   border-radius: 40px 5px 40px 40px;
-  padding: 30px;
-  padding-bottom: 10px;
+  padding: 40px 50px 25px;
 }
 
 .page .page-bottom .about .about-text h2 {
