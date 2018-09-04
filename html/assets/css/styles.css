@@ -1628,6 +1628,11 @@ parallax
 team
 --------------------------------------------- 
 */
+#team-list {
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
 .team-item {
   background: #fff;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
@@ -1644,8 +1649,8 @@ team
 }
 
 .team-item .user-image {
-  width: 96px;
-  height: 96px;
+  width: 180px;
+  height: 180px;
   border: 6px solid #fff;
   overflow: hidden;
   -webkit-border-radius: 25px;
@@ -1656,11 +1661,19 @@ team
   left: 0px;
   right: 0px;
   margin: auto;
-  top: -45px;
+  top: -120px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.team-item .user-image img {
+  display: inline;
+  margin: 0 auto;
+  width: 100%;
+  bottom: -25%;
+  position: absolute;
 }
 
 .team-item .team-content {
@@ -1679,10 +1692,11 @@ team
 .team-item .team-content .team-info .user-name {
   display: block;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
   letter-spacing: 0.69px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .team-item .team-content .team-info span {
@@ -2398,7 +2412,7 @@ pages
 .page .cover .page-top {
   position: absolute;
   width: 100%;
-  bottom: 50px;
+  bottom: 100px;
   z-index: 3;
 }
 
