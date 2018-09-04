@@ -18,6 +18,36 @@
 
 	<!-- Custom CSS -->
 	<link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+
+	<!-- Drift Live Chat -->
+	<!-- Start of Async Drift Code -->
+	<script>
+	"use strict";
+	
+	!function() {
+	  var t = window.driftt = window.drift = window.driftt || [];
+	  if (!t.init) {
+		if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+		t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+		t.factory = function(e) {
+		  return function() {
+			var n = Array.prototype.slice.call(arguments);
+			return n.unshift(e), t.push(n), t;
+		  };
+		}, t.methods.forEach(function(e) {
+		  t[e] = t.factory(e);
+		}), t.load = function(t) {
+		  var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+		  o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+		  var i = document.getElementsByTagName("script")[0];
+		  i.parentNode.insertBefore(o, i);
+		};
+	  }
+	}();
+	drift.SNIPPET_VERSION = '0.3.1';
+	drift.load('bh8p9735ihu7');
+	</script>
+	<!-- End of Async Drift Code -->
 </head>
 <body>
 
@@ -153,7 +183,7 @@
 		</div>
 	</section>
 	<!-- ***** Features Small End ***** -->
-	<!-- ***** Features Big Item Start ***** 
+	<!-- ***** Features Big Item Start ***** -->
 	<section class="section padding-bottom-80 colored" id="features">
 		<div class="container">
 			<div class="row">
@@ -217,7 +247,7 @@
 				</div>
 				<div class="col-lg-1"></div>
 				<div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-					<img src="assets/images/photos/features/brain.svg" class="img-fluid d-block mx-auto" alt="App">
+					<img src="assets/images/photos/features/screenshots.png" class="img-fluid d-block mx-auto" alt="App">
 				</div>
 			</div>
 		</div>
