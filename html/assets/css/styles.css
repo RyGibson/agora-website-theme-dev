@@ -1645,7 +1645,7 @@ team
 }
 
 .team-item:hover .user-image {
-  top: -55px;
+ /* top: -55px;  No hovering */ 
 }
 
 .team-item .user-image {
