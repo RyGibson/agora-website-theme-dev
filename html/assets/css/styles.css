@@ -1094,7 +1094,7 @@ welcome
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 0 0 60px 0;
 }
 
 .welcome-area:after {
@@ -1339,6 +1339,16 @@ features
 */
 .features-home {
   padding-top: 0px;
+  margin-top: 50px;
+}
+
+#contractor-distributor {
+/*  position: absolute;
+  top: 63%;
+  width: 100%;
+  z-index: 4;
+  transform: perspective(1px) translateY(0%);
+*/
   margin-top: -100px;
 }
 
@@ -2298,6 +2308,13 @@ footer
 footer {
   background: #F4F8FB;
   /*padding-top: 70px;*/
+}
+
+#home-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 footer img.logo {
