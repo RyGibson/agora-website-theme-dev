@@ -268,18 +268,19 @@ body {
   color: #fff;
   letter-spacing: 0.75px;
   text-transform: uppercase;
-  -webkit-transition: background 1s ease-out;
-  -moz-transition: background 1s ease-out;
-  -o-transition: background 1s ease-out;
-  transition: background 1s ease-out;
+  -webkit-transition: all 0.1s ease 0s;
+  -moz-transition: all 0.1s ease 0s;
+  -o-transition: all 0.1s ease 0s;
+  transition: all 0.1s ease 0s;
   outline: none !important;
   cursor: pointer;
   position: relative;
 }
 
 .btn-primary-line:hover {
-  background-image: linear-gradient(-135deg, #6A30D1 0%, #5C83E3 100%);
-  color: #fff;
+  border: 1px solid #635CDB;
+  background: #fff;
+  color: #635CDB;
 }
 
 .btn-white-line {
@@ -1342,7 +1343,8 @@ welcome
     line-height: 40px;
   }
   .welcome-area .header-text .btn-primary-line:hover {
-    color: #635CDB;
+    color: #fff;
+    background: #635CDB;
   }
   .welcome-area .play-button-wrapper {
     display: none;
@@ -1358,7 +1360,7 @@ features
   padding-top: 0px;
   margin-top: 50px;
 }
-
+/*
 #contractor-distributor {
   position: absolute;
   top: 63%;
@@ -1366,6 +1368,25 @@ features
   z-index: 4;
   transform: perspective(1px) translateY(0%);
   margin-top: -100px;
+}
+*/
+
+@media (min-width: 1701px) {
+  #contractor-distributor {
+    margin-top: -20%;
+  }
+}
+
+@media (max-width: 1700px) {
+  #contractor-distributor {
+    margin-top: -10%;
+  }
+}
+
+@media (max-width: 991px) {
+  #contractor-distributor {
+    margin-top: -15%;
+  }
 }
 
 #features-list {
@@ -1428,6 +1449,20 @@ features
   margin-bottom: 20px;
   background: #F6F4FD;
   border-radius: 22px 0 22px 22px;
+}
+
+.features-small-item .icon {
+  width: auto;
+  height: auto;
+  line-height: 70px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 20px;
+  background: none;
+}
+
+.features-small-item .icon img {
+  max-height: 100px;
 }
 
 .features-small-item .icon i {
@@ -1504,6 +1539,12 @@ features
 }
 
 @media (min-width: 1200px) {
+  #firms-box {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+}
+@media (min-width: 990px) {
   #firms-box {
     flex: 0 0 35%;
     max-width: 35%;
