@@ -986,6 +986,13 @@ header
     right: 5px;
   }
 }
+/*
+@media (min-width: 2133px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+*/
 
 @media (max-width: 991px) {
   .header-area {
@@ -1371,21 +1378,33 @@ features
 }
 */
 
-@media (min-width: 1701px) {
+@media (min-width: 1921px) {
   #contractor-distributor {
-    margin-top: -20%;
+    margin-top: -380px;
+  }
+}
+
+@media (max-width: 1920px) {
+  #contractor-distributor {
+    margin-top: -18%;
   }
 }
 
 @media (max-width: 1700px) {
   #contractor-distributor {
-    margin-top: -10%;
+    margin-top: -12%;
+  }
+}
+
+@media (max-width: 1300px) {
+  #contractor-distributor {
+    margin-top: -5%;
   }
 }
 
 @media (max-width: 991px) {
   #contractor-distributor {
-    margin-top: -15%;
+    margin-top: -10%;
   }
 }
 
