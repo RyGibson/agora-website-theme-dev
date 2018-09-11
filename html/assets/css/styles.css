@@ -1367,6 +1367,45 @@ features
   padding-top: 0px;
   margin-top: 50px;
 }
+
+@media (min-width: 990px) {
+  .product-features-point {
+    max-width: 99%;
+    flex: 0 0 99%;
+  }
+  
+  .product-features-list {
+    max-width: 35%;
+    flex: 0 0 35%;
+  }
+  
+  .product-features-picture {
+    max-width: 55%;
+    flex: 0 0 55%;
+  }
+  
+  .product-features-picture img {
+    max-width: 100%;
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .product-features-picture img {
+    max-width: 150%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .product-features-picture img {
+    max-width: 120%;
+  }
+}
+
+.product-features-divider {
+  max-width: 3%;
+}
+
 /*
 #contractor-distributor {
   position: absolute;
